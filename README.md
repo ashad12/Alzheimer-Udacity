@@ -10,7 +10,7 @@ The hippocampus is a critical structure of the human brain (and the brain of oth
 <figure>
   <p align="center">
   <img
-  src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Hippocampus_small.gif"
+  src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Hippocampus_small.gif" width="150%" height="150%"
   alt="Hippocampus">
   <figcaption>Source: Life Science Databases (LSDB). Hippocampus. Images are from Anatomography maintained by Life Science Databases (LSDB). (2010). CC-BY-SA 2.1jp. 
   <a href="https://commons.wikimedia.org/wiki/File:Hippocampus_small.gif">Link</a> </figcaption>
