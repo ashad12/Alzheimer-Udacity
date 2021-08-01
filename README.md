@@ -10,7 +10,7 @@ The hippocampus is a critical structure of the human brain (and the brain of oth
 <figure>
   <p align="center">
   <img
-  src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Hippocampus_small.gif" width="70%" height="70%"
+  src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Hippocampus_small.gif" width="50%" height="50%"
   alt="Hippocampus">
   <figcaption>Source: Life Science Databases (LSDB). Hippocampus. Images are from Anatomography maintained by Life Science Databases (LSDB). (2010). CC-BY-SA 2.1jp. 
   <a href="https://commons.wikimedia.org/wiki/File:Hippocampus_small.gif">Link</a> </figcaption>
@@ -18,3 +18,15 @@ The hippocampus is a critical structure of the human brain (and the brain of oth
 </figure>
 
 Humans have two hippocampi, one in each hemisphere of the brain. They are located in the medial temporal lobe of the brain. According to [Nobis et al., 2019](https://www.sciencedirect.com/science/article/pii/S2213158219302542), the volume of hippocampus varies in a population, depending on various parameters, within certain boundaries, and it is possible to identify a "normal" range taking into account age, sex and brain hemisphere.
+
+## Objective
+An end-to-end AI system is built comprised of a machine learning algorithm that integrates into a clinical-grade viewer and automatically measures hippocampal volumes of new patients.
+U-Net architecture is used to train the model on the MRI images and the corresponding hippocampus segments in NIFTI format. Finally, the model is integrated into a working clinical PACS such that it runs on every incoming study and produces a report with volume measurements. Following packages are used:
+* [PyTorch](https://pytorch.org/)
+* [nibabel](https://nipy.org/nibabel/)
+* [matplotlib](https://matplotlib.org/users/installing.html)
+* [numpy](https://numpy.org/)
+* [pydicom](https://pydicom.github.io/pydicom/stable/tutorials/installation.html)
+* [Pillow](https://pillow.readthedocs.io/en/stable/installation.html)
+* [tensorboard](https://pypi.org/project/tensorboard/)
+
