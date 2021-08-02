@@ -10,7 +10,7 @@ The hippocampus is a critical structure of the human brain (and the brain of oth
 <figure>
   <p align="center">
   <img
-  src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Hippocampus_small.gif" width="50%" height="50%"
+  src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Hippocampus_small.gif" width="40%" height="40%"
   alt="Hippocampus">
   <figcaption>Source: Life Science Databases (LSDB). Hippocampus. Images are from Anatomography maintained by Life Science Databases (LSDB). (2010). CC-BY-SA 2.1jp. 
   <a href="https://commons.wikimedia.org/wiki/File:Hippocampus_small.gif">Link</a> </figcaption>
@@ -30,10 +30,27 @@ U-Net architecture is used to train the model on the MRI images and the correspo
 * [Pillow](https://pillow.readthedocs.io/en/stable/installation.html)
 * [tensorboard](https://pypi.org/project/tensorboard/)
 
-Following software products were provided by *Udacity Workspace* in the 3rd section of the projec for emulating the clinical network:
+Following software products were provided by *Udacity Workspace* in the 3rd section of the project for emulating the clinical network:
 *	[Orthanc server](https://www.orthanc-server.com/download.php) for PACS emulation
 *	[OHIF zero-footprint web viewer](https://docs.ohif.org/development/getting-started.html) for viewing images
 *	[DCMTK tools](https://dcmtk.org/) for testing and emulating a modality
 
 ## Dataset
 Hippocampus dataset are obtained from the [Medical Decathlon competition](http://medicaldecathlon.com/). Dataset consists of NIFTI files each of which represents a volume and the corresponding segmentation mask. The original images are T2 MRI scans of the full brain, however, only the region of interest (hippocampus) is cropped and studied. This allows for simpler, faster training of the model.
+
+## Project Phases
+### Phase 1: EDA & Data Cleanup
+As mentioned earlier only the hippocampus region is fed to the model. The [EDA](Section1/EDA.ipynb) file analyses the dataset of images and labels (i.e. segments). Following is the snapshot of one dataset showing the image slices next the corresponding segment.
+
+<figure>
+  <p align="center">
+  <img
+  src="Section1/slcVSsgm.jpg"
+  alt="Slices vs segments">
+  <figcaption>Sample of slices and corresponding segments</figcaption>
+  </p>
+</figure>
+
+Using nibabel package, useful information such as NIFTI metadata, unit of measurement, sagittal and coronal plane, etc are extracted. The dataset is later inspected for any irregularities in file length, slice-label correspondence, ect. The curated dataset is exported for the next phase of the project, Section 2.
+
+
