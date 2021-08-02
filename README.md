@@ -30,3 +30,5 @@ U-Net architecture is used to train the model on the MRI images and the correspo
 * [Pillow](https://pillow.readthedocs.io/en/stable/installation.html)
 * [tensorboard](https://pypi.org/project/tensorboard/)
 
+## Dataset
+Hippocampus dataset are obtained from the [Medical Decathlon competition](http://medicaldecathlon.com/). Dataset consists of NIFTI files each of which represents a volume and the corresponding segmentation mask. The original images are T2 MRI scans of the full brain, however, only the region of interest (hippocampus) is cropped and studied. This allows for simpler, faster training of the model.
