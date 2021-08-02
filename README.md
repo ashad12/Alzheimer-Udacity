@@ -30,5 +30,10 @@ U-Net architecture is used to train the model on the MRI images and the correspo
 * [Pillow](https://pillow.readthedocs.io/en/stable/installation.html)
 * [tensorboard](https://pypi.org/project/tensorboard/)
 
+Following software products were provided by *Udacity Workspace* in the 3rd section of the projec for emulating the clinical network:
+*	[Orthanc server](https://www.orthanc-server.com/download.php) for PACS emulation
+*	[OHIF zero-footprint web viewer](https://docs.ohif.org/development/getting-started.html) for viewing images
+*	[DCMTK tools](https://dcmtk.org/) for testing and emulating a modality
+
 ## Dataset
 Hippocampus dataset are obtained from the [Medical Decathlon competition](http://medicaldecathlon.com/). Dataset consists of NIFTI files each of which represents a volume and the corresponding segmentation mask. The original images are T2 MRI scans of the full brain, however, only the region of interest (hippocampus) is cropped and studied. This allows for simpler, faster training of the model.
