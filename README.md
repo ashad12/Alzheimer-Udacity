@@ -45,10 +45,10 @@ As mentioned earlier only the hippocampus region is fed to the model. The [EDA](
 <figure>
   <p align="center">
   <img
-  src="Section1/slcVSsgm.jpg"
+  src="Section1/slcVSsgm.JPG"
   alt="Slices vs segments">
-  <figcaption>Sample of slices and corresponding segments</figcaption>
   </p>
+  <figcaption><p align="center"> Sample of slices and corresponding segments. </p></figcaption>
 </figure>
 
 Using nibabel package, useful information such as NIFTI metadata, unit of measurement, sagittal and coronal plane, etc are extracted. The dataset is later inspected for any irregularities in file length, slice-label correspondence, ect. The curated dataset is exported for the next phase of the project, Section 2.
