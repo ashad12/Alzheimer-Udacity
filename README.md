@@ -36,7 +36,7 @@ Following software products were provided by *Udacity Workspace* in the 3rd sect
 *	[DCMTK tools](https://dcmtk.org/) for testing and emulating a modality
 
 ## Dataset
-Hippocampus dataset are obtained from the [Medical Decathlon competition](http://medicaldecathlon.com/). Dataset consists of NIFTI files each of which represents a volume and the corresponding segmentation mask. The original images are T2 MRI scans of the full brain, however, only the region of interest (hippocampus) is cropped and studied. This allows for simpler, faster training of the model.
+Hippocampus dataset are obtained from the [Medical Decathlon competition](http://medicaldecathlon.com/). Dataset consists of NIFTI files each of which represents a volume and the corresponding segmentation mask. The original images are T2 MRI scans of the full brain, however, only the region of interest (hippocampus) is cropped and studied. This allows for simpler, faster training of the model. The training set is provided by [Udacity](https://github.com/udacity/nd320-c3-3d-imaging-starter/tree/master/data/TrainingSet).
 
 ## Project Phases
 ### Phase 1: EDA & Data Cleanup
