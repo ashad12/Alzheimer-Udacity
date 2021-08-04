@@ -53,4 +53,17 @@ As mentioned earlier only the hippocampus region is fed to the model. The [EDA](
 
 Using nibabel package, useful information such as NIFTI metadata, unit of measurement, sagittal and coronal plane, etc are extracted. The dataset is later inspected for any irregularities in file length, slice-label correspondence, ect. The curated dataset is exported for the next phase of the project, Section 2.
 
+### Phase 2: Model/Training/Evaluation
+#### Data preparation
+Two scripts are in charge of preparing data to be fed to the model. One script loads the images and labels from the given root, followed by normalizing and resizing accordingly. 
+Each image (slice) in a *image stack* and its corresponding label in the *label stack* are considered one training sample. To enforce this, [SlicesDataset](Section2/data_prep/SlicesDataset.py) is written based on *Dataset* class of Pytorch, which is then used in Pytorch *DataLoader* class to sort and prepare samples for training.
+
+#### Model architecture
+Recursive [U-Net](https://arxiv.org/abs/1505.04597) model is used from *Division of Medical Image Computing, German Cancer Research Center (DKFZ)* and can be found [here](Section2/networks/RecursiveUNet.py).
+
+#### Model training
+The training algorithm is provided in [UNetExperiment](Section2/experiments/UNetExperiment.py) class which uses *Udacity* GPU environment. Adam optimizer is used with *learning rate scheduler* to decrease (<img src="https://latex.codecogs.com/gif.latex?l_r"/>) upon plateau trend on validation loss. Tensorboard is used to log the validation results and model parameters are saved after each epoch. Since there are 3 classes of labels (0: nothing, 1: interior, 2: posterior), cross entropy loss is used. 
+To evaluate the model, Dice and Jaccard metrics are implemented on the test result. The functions of these two metrics are provided in this [script](Section2/utils/volume_stats.py). Note that, neither method distinguishes posterior/interior region, thereby the whole segmented zone is taken into account.
+
+[run_ml_pipeline.py](Section2/run_ml_pipeline.py) script is provided to setup the training parameters, sort the train/validation/test sets, start the training and test, and record the results as a *json* file.
 
