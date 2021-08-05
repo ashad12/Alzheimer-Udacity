@@ -68,7 +68,7 @@ To evaluate the model, Dice and Jaccard metrics are implemented on the test resu
 [run_ml_pipeline.py](Section2/run_ml_pipeline.py) script is provided to setup the training parameters, sort the train/validation/test sets, start the training and test, and record the results as a *json* file.
 
 ### Phase 3: Clinical Integration
-This section uses *Udacity workspace* and the provided software to integrate the ML pipline into a simulated clinical environment for hippocampus evaluation in MRI images. [inference_dcm.py](Section3/inference_dcm.py) script is created to deploy the saved model on the MRI image stack, label the hippocampus, compute its volume and present the results in the image viewer as DICOM file. 
+This section uses *Udacity workspace* and the provided software to integrate the ML pipline into a simulated clinical environment for hippocampus evaluation in MRI images. [inference_dcm.py](Section3/inference_dcm.py) script is prepared to deploy the saved model on the MRI image stack, label the hippocampus, compute its volume and present the results in the image viewer as a DICOM file. 
 
 <figure>
   <p align="center">
