@@ -11,10 +11,9 @@ The hippocampus is a critical structure of the human brain (and the brain of oth
   <p align="center">
   <img
   src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Hippocampus_small.gif" width="40%" height="40%"
-  alt="Hippocampus">
-  <figcaption>Source: Life Science Databases (LSDB). Hippocampus. Images are from Anatomography maintained by Life Science Databases (LSDB). (2010). CC-BY-SA 2.1jp. 
-  <a href="https://commons.wikimedia.org/wiki/File:Hippocampus_small.gif">Link</a> </figcaption>
-  </p>
+  alt="Hippocampus"></p>
+  <figcaption><p align="center">Source: Life Science Databases (LSDB). Hippocampus. Images are from Anatomography maintained by Life Science Databases (LSDB). (2010). CC-BY-SA 2.1jp. 
+  <a href="https://commons.wikimedia.org/wiki/File:Hippocampus_small.gif">Link</a> </p></figcaption>
 </figure>
 
 Humans have two hippocampi, one in each hemisphere of the brain. They are located in the medial temporal lobe of the brain. According to [Nobis et al., 2019](https://www.sciencedirect.com/science/article/pii/S2213158219302542), the volume of hippocampus varies in a population, depending on various parameters, within certain boundaries, and it is possible to identify a "normal" range taking into account age, sex and brain hemisphere.
